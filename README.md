@@ -24,15 +24,13 @@ python3 -m http.server 8000
 # → http://localhost:8000
 ```
 
-## Pricing model (BGN, per m²)
+## Pricing model (EUR, per m²)
 
-Mirrors the typical Bulgarian wall-print market:
-
-| Tier | Area      | Price   |
-| ---- | --------- | ------- |
-| 1    | 1st m²    | 200 lv  |
-| 2    | 2nd m²    | 150 lv  |
-| 3    | 3+ m²     | 110 lv  |
+| Tier | Area    | Price |
+| ---- | ------- | ----- |
+| 1    | 1st m²  | €100  |
+| 2    | 2nd m²  | €75   |
+| 3    | 3+ m²   | €55   |
 
 ## Things to plug in before shipping
 

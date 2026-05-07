@@ -3,439 +3,313 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>MuraInk — Стенен печат за дом, офис и бизнес</title>
-  <meta name="description" content="MuraInk — директен дигитален печат върху стена. Превръщаме всяка стена в произведение на изкуството. Поръчайте за дома, офиса, ресторанта или магазина си в България." />
+  <title>MuraInk — стенен печат в България</title>
+  <meta name="description" content="MuraInk — директен дигитален печат върху стена. Снимки, лога и арт по поръчка, без тапети и шаблони. София и цяла България." />
   <meta name="theme-color" content="#0B0B0F" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="MuraInk — Стенен печат" />
-  <meta property="og:description" content="Директен дигитален печат върху стена. От снимка до фотореалистична стенопис за часове." />
+  <meta property="og:title" content="MuraInk — стенен печат" />
+  <meta property="og:description" content="Превръщаме стената в платно. Директен печат върху мазилка, стъкло, метал и тапет." />
   <meta property="og:locale" content="bg_BG" />
+  <meta property="og:image" content="./assets/muraink-logo.jpg" />
 
+  <link rel="icon" type="image/jpeg" href="./assets/muraink-logo.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&family=Unbounded:wght@600;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Bagel+Fat+One&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
+
   <!-- ================= NAV ================= -->
   <header class="nav" id="nav">
-    <a href="#top" class="brand" aria-label="MuraInk начало">
-      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
-        <rect x="3" y="6" width="34" height="22" rx="3" fill="none" stroke="currentColor" stroke-width="2" />
-        <circle cx="20" cy="17" r="4" fill="currentColor" />
-        <line x1="10" y1="32" x2="30" y2="32" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-        <line x1="14" y1="36" x2="26" y2="36" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".5" />
-      </svg>
-      <span class="brand-text">Mura<span class="brand-ink">Ink</span></span>
+    <a href="#top" class="brand" aria-label="MuraInk">
+      <img src="./assets/muraink-logo.jpg" alt="MuraInk" class="brand-logo" />
     </a>
     <nav class="nav-links" aria-label="Главна навигация">
-      <a href="#services">Услуги</a>
-      <a href="#how">Как работи</a>
+      <a href="#what">Какво правим</a>
+      <a href="#how">Процес</a>
       <a href="#pricing">Цени</a>
-      <a href="#gallery">Проекти</a>
+      <a href="#work">Проекти</a>
       <a href="#contact">Контакти</a>
     </nav>
-    <a class="btn btn-primary nav-cta" href="#contact">Запитване</a>
+    <a class="btn nav-cta" href="#contact">Запитване</a>
   </header>
 
   <!-- ================= HERO ================= -->
   <section class="hero" id="top">
-    <div class="hero-grid">
-      <div class="hero-copy">
-        <span class="eyebrow">Стенен печат · MuraInk</span>
-        <h1 class="hero-title">
-          Превръщаме <span class="hl">стената</span> в платно.
-        </h1>
-        <p class="hero-sub">
-          Директен дигитален печат върху всякакви вертикални повърхности — без тапети, без лепило, без шаблон. Само мастило, стена и въображение.
-        </p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Поискайте оферта</a>
-          <a href="#how" class="btn btn-ghost">Вижте как работи →</a>
-        </div>
-        <ul class="hero-stats" role="list">
-          <li><strong>до 2.5 м²/час</strong><span>скорост на печат</span></li>
-          <li><strong>до 5 м</strong><span>височина на стена</span></li>
-          <li><strong>10+ повърхности</strong><span>мазилка, стъкло, метал</span></li>
-        </ul>
-      </div>
+    <div class="hero-stage" aria-label="Робот, който печата логото MuraInk върху стена">
+      <!-- the wall -->
+      <div class="wall">
+        <!-- horizontal rail -->
+        <div class="rail-h"></div>
+        <!-- vertical posts -->
+        <span class="post post-l"></span>
+        <span class="post post-r"></span>
 
-      <!-- Animated robot drawing on wall -->
-      <div class="hero-stage" aria-hidden="true">
-        <div class="stage-frame">
-          <svg class="stage-svg" viewBox="0 0 600 420" preserveAspectRatio="xMidYMid meet">
-            <!-- wall background -->
-            <defs>
-              <pattern id="plaster" width="6" height="6" patternUnits="userSpaceOnUse">
-                <rect width="6" height="6" fill="#efe9df" />
-                <circle cx="1" cy="2" r=".5" fill="#d8cfc0" />
-                <circle cx="4" cy="5" r=".5" fill="#d8cfc0" />
-              </pattern>
-              <linearGradient id="rail" x1="0" x2="0" y1="0" y2="1">
-                <stop offset="0" stop-color="#1a1a1f" />
-                <stop offset="1" stop-color="#0b0b0f" />
-              </linearGradient>
-              <filter id="ink" x="-10%" y="-10%" width="120%" height="120%">
-                <feGaussianBlur stdDeviation=".4" />
-              </filter>
-            </defs>
-
-            <rect x="0" y="0" width="600" height="420" fill="url(#plaster)" />
-            <!-- baseboard -->
-            <rect x="0" y="396" width="600" height="24" fill="#e3dccf" />
-            <line x1="0" y1="396" x2="600" y2="396" stroke="#c9c1b1" stroke-width="1" />
-
-            <!-- the printed artwork being drawn -->
-            <g class="artwork" filter="url(#ink)">
-              <!-- M -->
-              <path class="ink-stroke" d="M90 280 L110 160 L150 230 L190 160 L210 280" />
-              <!-- u -->
-              <path class="ink-stroke" d="M240 200 L240 260 Q240 285 265 285 Q290 285 290 260 L290 200" />
-              <!-- r -->
-              <path class="ink-stroke" d="M315 285 L315 200 Q315 200 340 200 Q360 200 360 218" />
-              <!-- a -->
-              <path class="ink-stroke" d="M410 215 Q380 205 380 240 Q380 285 410 280 Q430 277 432 255 L432 200 L432 285" />
-              <!-- dot -->
-              <circle class="ink-stroke" cx="470" cy="290" r="6" fill="currentColor" stroke="none" />
-              <!-- Ink underline flourish -->
-              <path class="ink-stroke flourish" d="M85 320 Q300 305 500 322" />
-            </g>
-
-            <!-- vertical rail -->
-            <rect class="rail-v" x="540" y="20" width="6" height="370" fill="url(#rail)" rx="2" />
-            <rect class="rail-v" x="40"  y="20" width="6" height="370" fill="url(#rail)" rx="2" />
-            <!-- horizontal rail (moves up/down via JS-less CSS animation) -->
-            <g class="rail-h-group">
-              <rect class="rail-h" x="40" y="0" width="506" height="6" fill="url(#rail)" rx="2" />
-              <!-- the robot -->
-              <g class="robot">
-                <!-- shadow on wall -->
-                <ellipse cx="0" cy="58" rx="44" ry="4" fill="#000" opacity=".18" />
-                <!-- body -->
-                <rect x="-46" y="-20" width="92" height="60" rx="8" fill="#0b0b0f" />
-                <rect x="-46" y="-20" width="92" height="60" rx="8" fill="none" stroke="#FF4438" stroke-width="1.5" opacity=".9" />
-                <!-- screen -->
-                <rect x="-32" y="-10" width="64" height="20" rx="3" fill="#1a1a1f" />
-                <rect class="screen-bar" x="-28" y="-4" width="14" height="8" rx="1.5" fill="#FF4438" />
-                <circle cx="20" cy="0" r="2" fill="#7af2c0" />
-                <!-- print head -->
-                <rect x="-8" y="40" width="16" height="14" rx="2" fill="#FF4438" />
-                <rect x="-3" y="50" width="6" height="6" fill="#FF4438" />
-                <!-- ink drops -->
-                <circle class="drop d1" cx="0" cy="60" r="1.6" fill="#FF4438" />
-                <circle class="drop d2" cx="0" cy="60" r="1.2" fill="#FF4438" />
-                <!-- top mounts -->
-                <rect x="-30" y="-26" width="6" height="8" fill="#0b0b0f" />
-                <rect x="24"  y="-26" width="6" height="8" fill="#0b0b0f" />
-              </g>
-            </g>
-          </svg>
-
-          <!-- Plug into wall -->
-          <div class="stage-caption">
-            <span class="dot live"></span>
-            <span>Печат в реално време · 1440 dpi</span>
+        <!-- the artwork being printed (clipped, revealed left-to-right) -->
+        <div class="print">
+          <img src="./assets/muraink-logo.jpg" alt="" class="print-logo" />
+          <div class="print-tagline">
+            <span>С</span><span>Т</span><span>Е</span><span>Н</span><span>Е</span><span>Н</span>
+            <span class="gap"></span>
+            <span>П</span><span>Е</span><span>Ч</span><span>А</span><span>Т</span>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <span>Домове</span><span>·</span>
-        <span>Офиси</span><span>·</span>
-        <span>Ресторанти</span><span>·</span>
-        <span>Магазини</span><span>·</span>
-        <span>Хотели</span><span>·</span>
-        <span>Детски стаи</span><span>·</span>
-        <span>Фитнес зали</span><span>·</span>
-        <span>Кафенета</span><span>·</span>
-        <span>Домове</span><span>·</span>
-        <span>Офиси</span><span>·</span>
-        <span>Ресторанти</span><span>·</span>
-        <span>Магазини</span><span>·</span>
-        <span>Хотели</span><span>·</span>
-        <span>Детски стаи</span><span>·</span>
+        <!-- the robot rides along the rail -->
+        <div class="robot" aria-hidden="true">
+          <div class="robot-body">
+            <span class="screen"><i></i></span>
+          </div>
+          <div class="robot-arm"></div>
+          <div class="robot-head">
+            <span class="nozzle"></span>
+          </div>
+          <span class="drip drip-c"></span>
+          <span class="drip drip-m"></span>
+          <span class="drip drip-y"></span>
+        </div>
+      </div>
+
+      <!-- copy below stage -->
+      <div class="hero-copy">
+        <h1>Стената вече не е просто стена.</h1>
+        <p>Печатаме директно върху мазилка, стъкло, метал и тапет — със снимка, лого или арт по поръчка. Без шаблони, без лепило, без следи.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-ink">Поискайте оферта</a>
+          <a href="#how" class="btn btn-link">Как работи →</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ================= SERVICES ================= -->
-  <section class="section" id="services">
-    <div class="section-head">
-      <span class="eyebrow">Услуги</span>
-      <h2>Какво печатаме</h2>
-      <p class="section-sub">От една акцентна стена до цял интериор — индивидуален дизайн или ваша снимка с висока резолюция.</p>
-    </div>
+  <!-- ================= WHAT WE DO ================= -->
+  <section class="section" id="what">
+    <header class="lead">
+      <h2>Какво правим</h2>
+      <p>Един принтер, една стена, един ден. Това, което довчера беше тапет или мурал, днес е снимка с резолюция 1440 dpi.</p>
+    </header>
 
-    <div class="cards">
-      <article class="card">
-        <div class="card-icon" aria-hidden="true">🏠</div>
+    <div class="what-grid">
+      <article>
         <h3>За дома</h3>
-        <p>Акцентни стени в спалня, хол или детска. Семейни снимки, природни пейзажи, абстракции — без тапети и без лепило.</p>
+        <p>Акцентна стена в спалнята, детската или коридора. Семейна снимка, пейзаж, детски герой.</p>
       </article>
-      <article class="card">
-        <div class="card-icon" aria-hidden="true">🏢</div>
-        <h3>За офис и бизнес</h3>
-        <p>Брандиране на офис пространство, лога и мисия върху стена, мотивиращи послания за екипа.</p>
+      <article>
+        <h3>За офиса</h3>
+        <p>Лого и мисия в реалната им големина. Брандирани преговорни и open-space стени.</p>
       </article>
-      <article class="card">
-        <div class="card-icon" aria-hidden="true">🍽️</div>
-        <h3>Ресторанти и хотели</h3>
-        <p>Тематични стенописи, менюта върху стена, инстаграм-достойни кътове, които правят впечатление на гостите.</p>
+      <article>
+        <h3>За ресторант или хотел</h3>
+        <p>Тематични стенописи, менюта на стена, инстаграм кът, който гостите ви снимат сами.</p>
       </article>
-      <article class="card">
-        <div class="card-icon" aria-hidden="true">🛍️</div>
-        <h3>Магазини и витрини</h3>
-        <p>Промоционални визии, сезонни кампании и брандирани витрини, които сменяте, когато решите.</p>
+      <article>
+        <h3>За магазин</h3>
+        <p>Сезонни кампании и промо визии. Сменяте ги, когато решите — стената остава ваша.</p>
       </article>
-      <article class="card">
-        <div class="card-icon" aria-hidden="true">🎨</div>
-        <h3>Индивидуален дизайн</h3>
-        <p>Имате идея, но не и файл? Нашият дизайнер ще създаде визия по ваше задание и ще я одобрите преди печат.</p>
-      </article>
-      <article class="card">
-        <div class="card-icon" aria-hidden="true">🌿</div>
+      <article>
         <h3>Външни фасади</h3>
-        <p>UV-устойчиви мастила за фасади, огради и витрини. Подходящо за магазини, гаражни врати и градски арт.</p>
+        <p>UV-устойчиви мастила за витрини, гаражни врати и открит арт. Издържат години под слънце и дъжд.</p>
+      </article>
+      <article>
+        <h3>Дизайн по поръчка</h3>
+        <p>Имате идея, нямате файл? Подготвяме визията заедно и я одобрявате преди първата капка мастило.</p>
       </article>
     </div>
   </section>
 
   <!-- ================= HOW IT WORKS ================= -->
   <section class="section section-dark" id="how">
-    <div class="section-head">
-      <span class="eyebrow">Процес</span>
-      <h2>Как работи стенният печат</h2>
-      <p class="section-sub">Без шум, без прах, без боя по пода. Един принтер, една стена, един ден.</p>
-    </div>
+    <header class="lead">
+      <h2>От снимка до стена за един ден</h2>
+      <p>Без шум, без прах, без боя по пода.</p>
+    </header>
 
-    <ol class="steps">
+    <ol class="process">
       <li>
-        <span class="step-num">01</span>
-        <h3>Изберете визия</h3>
-        <p>Изпратете ни ваша снимка или идея. Подготвяме файла във висока резолюция и одобрявате крайния вид.</p>
+        <span>01</span>
+        <h3>Изпращате снимка или идея</h3>
+        <p>Може и снимка със смартфон. Подготвяме файла във висока резолюция и го одобрявате преди печат.</p>
       </li>
       <li>
-        <span class="step-num">02</span>
-        <h3>Подготовка на стената</h3>
-        <p>Стената трябва да е суха, чиста и гладко боядисана. Грундираме при необходимост — отнема под час.</p>
+        <span>02</span>
+        <h3>Подготвяме стената</h3>
+        <p>Гладко боядисана стена е готова за печат. Ако трябва грунд — поемаме го ние, отнема под час.</p>
       </li>
       <li>
-        <span class="step-num">03</span>
-        <h3>Печат на място</h3>
-        <p>Роботът-принтер се закрепя пред стената и нанася мастилото пиксел по пиксел при до 1440 dpi.</p>
+        <span>03</span>
+        <h3>Принтерът печата</h3>
+        <p>Закрепяме принтера пред стената. Не я докосва — пръска мастило пиксел по пиксел като голям inkjet.</p>
       </li>
       <li>
-        <span class="step-num">04</span>
+        <span>04</span>
         <h3>Готово до часове</h3>
-        <p>Мастилото изсъхва за минути. Не се измива, не избелва на слънце. Можете да живеете с него от същия ден.</p>
+        <p>Мастилото съхне за минути. Не избелва, мие се с влажна кърпа. Живеете със стената си от същия ден.</p>
       </li>
     </ol>
   </section>
 
-  <!-- ================= SURFACES / TECH ================= -->
-  <section class="section" id="surfaces">
-    <div class="two-col">
+  <!-- ================= TECH ================= -->
+  <section class="section" id="tech">
+    <div class="tech-row">
       <div>
-        <span class="eyebrow">Техника</span>
         <h2>Печатаме върху почти всичко</h2>
-        <p class="section-sub">Latex и UV мастила, безопасни за интериор, без мирис и без VOC. Печатът е устойчив на влажно почистване.</p>
-        <ul class="check">
-          <li>Гладка мазилка и латекс</li>
+        <p>Латексови и UV мастила без VOC и без мирис. Издържат на влажно почистване и не избелват.</p>
+        <ul class="surfaces">
+          <li>Мазилка и латекс</li>
           <li>Гипсокартон</li>
-          <li>Тапети (бяла основа)</li>
+          <li>Бели тапети</li>
           <li>Стъкло и огледала</li>
           <li>Метал и алуминий</li>
           <li>Дърво и MDF</li>
-          <li>Бетон и тухла (с грунд)</li>
+          <li>Бетон и тухла<small>&nbsp;(с грунд)</small></li>
           <li>Плочки и керамика</li>
         </ul>
       </div>
-      <div class="tech-card">
-        <div class="tech-row"><span>Резолюция</span><strong>до 1440 dpi</strong></div>
-        <div class="tech-row"><span>Скорост</span><strong>до 2.5 м²/час</strong></div>
-        <div class="tech-row"><span>Височина</span><strong>до 5 м</strong></div>
-        <div class="tech-row"><span>Дължина</span><strong>неограничена</strong></div>
-        <div class="tech-row"><span>Издръжливост</span><strong>10+ години</strong></div>
-        <div class="tech-row"><span>Мирис</span><strong>без VOC</strong></div>
-      </div>
+
+      <aside class="specs">
+        <div><span>Резолюция</span><b>до 1440 dpi</b></div>
+        <div><span>Скорост</span><b>~2.5 м² / час</b></div>
+        <div><span>Височина</span><b>до 5 м</b></div>
+        <div><span>Дължина</span><b>неограничена</b></div>
+        <div><span>Издръжливост</span><b>10+ години</b></div>
+        <div><span>Мирис</span><b>без VOC</b></div>
+      </aside>
     </div>
   </section>
 
   <!-- ================= PRICING ================= -->
   <section class="section section-tinted" id="pricing">
-    <div class="section-head">
-      <span class="eyebrow">Цени</span>
-      <h2>Прозрачно ценообразуване</h2>
-      <p class="section-sub">Цените са на квадратен метър и намаляват с увеличаване на площта. Включват транспорт в София и обработка на файла.</p>
-    </div>
+    <header class="lead">
+      <h2>Цени</h2>
+      <p>Намаляват с увеличаване на площта. Транспорт в София и обработка на файла — включени.</p>
+    </header>
 
-    <div class="price-grid">
-      <article class="price-card">
-        <header><span class="tier">Тиер 1</span><h3>Първи м²</h3></header>
-        <div class="price"><span class="num">200</span><span class="cur">лв</span><span class="per">/м²</span></div>
+    <div class="prices">
+      <article class="price">
+        <span class="kicker">Първи м²</span>
+        <div class="amount"><b>€100</b><i>/м²</i></div>
         <ul>
-          <li>До 4 цвята / фотопечат</li>
+          <li>До 4 цвята или фотопечат</li>
           <li>Резолюция 720 dpi</li>
           <li>Стандартна обработка на файл</li>
         </ul>
       </article>
 
-      <article class="price-card highlight">
-        <header><span class="tier">Тиер 2</span><h3>Втори м²</h3></header>
-        <div class="price"><span class="num">150</span><span class="cur">лв</span><span class="per">/м²</span></div>
+      <article class="price price-hi">
+        <span class="kicker">Втори м²</span>
+        <div class="amount"><b>€75</b><i>/м²</i></div>
         <ul>
           <li>Пълноцветен фотопечат</li>
-          <li>Резолюция до 1440 dpi</li>
+          <li>До 1440 dpi</li>
           <li>Безплатен предварителен макет</li>
         </ul>
-        <span class="badge">Най-избирано</span>
+        <span class="tag">най-избирано</span>
       </article>
 
-      <article class="price-card">
-        <header><span class="tier">Тиер 3</span><h3>3-ти м² и нагоре</h3></header>
-        <div class="price"><span class="num">110</span><span class="cur">лв</span><span class="per">/м²</span></div>
+      <article class="price">
+        <span class="kicker">3+ м²</span>
+        <div class="amount"><b>€55</b><i>/м²</i></div>
         <ul>
           <li>За проекти над 3 м²</li>
-          <li>Включена доставка в страната*</li>
+          <li>Доставка в страната*</li>
           <li>Дизайнерска консултация</li>
         </ul>
       </article>
     </div>
 
-    <p class="price-note">* За локации извън София и големите градове може да се добави такса транспорт. Минимална поръчка: 1 м². Цените са с включен ДДС.</p>
+    <p class="fineprint">* За локации извън София може да се добави такса транспорт. Минимална поръчка — 1 м². Цените са с включен ДДС.</p>
   </section>
 
-  <!-- ================= GALLERY ================= -->
-  <section class="section" id="gallery">
-    <div class="section-head">
-      <span class="eyebrow">Проекти</span>
+  <!-- ================= WORK / GALLERY ================= -->
+  <section class="section" id="work">
+    <header class="lead">
       <h2>Реализирани стени</h2>
-      <p class="section-sub">Скоро ще добавим още. Междувременно вижте последните ни проекти във Facebook.</p>
+      <p>Скоро ще добавим още. Междувременно — повече във Facebook.</p>
+    </header>
+
+    <div class="work-grid">
+      <figure class="w w1"><figcaption>Детска · София</figcaption></figure>
+      <figure class="w w2"><figcaption>Офис · Пловдив</figcaption></figure>
+      <figure class="w w3"><figcaption>Ресторант · Варна</figcaption></figure>
+      <figure class="w w4"><figcaption>Кафене · София</figcaption></figure>
+      <figure class="w w5"><figcaption>Хотел · Банско</figcaption></figure>
+      <figure class="w w6"><figcaption>Магазин · София</figcaption></figure>
     </div>
 
-    <div class="gallery">
-      <figure class="g g1"><figcaption>Детска стая · София</figcaption></figure>
-      <figure class="g g2"><figcaption>Офис лого · Пловдив</figcaption></figure>
-      <figure class="g g3"><figcaption>Ресторант · Варна</figcaption></figure>
-      <figure class="g g4"><figcaption>Кафене · София</figcaption></figure>
-      <figure class="g g5"><figcaption>Хотел лоби · Банско</figcaption></figure>
-      <figure class="g g6"><figcaption>Магазин витрина · София</figcaption></figure>
-    </div>
-
-    <div class="center">
-      <a class="btn btn-ghost" href="https://www.facebook.com/share/1Dj8hc8AC5/" target="_blank" rel="noopener">Вижте повече във Facebook →</a>
-    </div>
+    <p class="center"><a class="btn btn-link" href="https://www.facebook.com/share/1Dj8hc8AC5/" target="_blank" rel="noopener">Вижте повече във Facebook →</a></p>
   </section>
 
   <!-- ================= FAQ ================= -->
   <section class="section section-tinted" id="faq">
-    <div class="section-head">
-      <span class="eyebrow">Често задавани въпроси</span>
-      <h2>FAQ</h2>
-    </div>
+    <header class="lead">
+      <h2>Често задавани</h2>
+    </header>
 
     <div class="faq">
       <details>
-        <summary>Колко време отнема печатът?</summary>
-        <p>Скоростта е около 2.5 м²/час. Стандартен проект от 3–5 м² се печата за половин до един работен ден.</p>
+        <summary>Колко време отнема?</summary>
+        <p>Около 2.5 м² на час. Стандартен проект 3–5 м² се прави за половин до един работен ден.</p>
       </details>
       <details>
         <summary>Уврежда ли се стената?</summary>
-        <p>Не. Принтерът не докосва стената — мастилото се пръска от разстояние, подобно на струен принтер. Не оставя дупки или следи от лепило.</p>
-      </details>
-      <details>
-        <summary>Може ли да се измие?</summary>
-        <p>Да. След като мастилото изсъхне (около 30 минути), стената може да се почиства с влажна кърпа без проблем.</p>
+        <p>Не. Принтерът не я докосва. Няма дупки, няма следи от лепило.</p>
       </details>
       <details>
         <summary>Какво е необходимо от мен?</summary>
-        <p>Гладка, чиста и боядисана стена, достъп до контакт и снимка/идея за визията. С останалото се грижим ние.</p>
+        <p>Гладко боядисана стена, контакт наблизо и снимка или идея. Останалото поемаме ние.</p>
       </details>
       <details>
-        <summary>Печатате ли извън София?</summary>
-        <p>Да, обслужваме цяла България. Възможна е допълнителна транспортна такса според дестинацията.</p>
-      </details>
-      <details>
-        <summary>Може ли да се махне впоследствие?</summary>
-        <p>Да. Покрива се с обикновена боя точно както при всяка друга стена.</p>
+        <summary>Може ли да се махне?</summary>
+        <p>Да. Покрива се с обикновена боя точно както при всяка стена.</p>
       </details>
     </div>
   </section>
 
   <!-- ================= CONTACT ================= -->
   <section class="section" id="contact">
-    <div class="contact-grid">
+    <div class="contact-row">
       <div>
-        <span class="eyebrow">Свържете се</span>
         <h2>Поискайте оферта</h2>
-        <p class="section-sub">Изпратете ни размери, снимка на стената и идея — отговаряме до 24 часа с оферта и предварителен макет.</p>
+        <p>Изпратете ни размерите на стената, снимка и идея — отговаряме до 24 часа с предварителен макет и цена.</p>
 
         <ul class="contact-list">
-          <li>
-            <span class="ci">✉</span>
-            <a href="mailto:hello@muraink.bg">hello@muraink.bg</a>
-          </li>
-          <li>
-            <span class="ci">☎</span>
-            <a href="tel:+359000000000">+359 000 000 000</a>
-          </li>
-          <li>
-            <span class="ci">f</span>
-            <a href="https://www.facebook.com/share/1Dj8hc8AC5/" target="_blank" rel="noopener">facebook.com/MuraInk</a>
-          </li>
-          <li>
-            <span class="ci">⌘</span>
-            <span>София · Цяла България</span>
-          </li>
+          <li><a href="mailto:hello@muraink.bg">hello@muraink.bg</a></li>
+          <li><a href="tel:+359000000000">+359 000 000 000</a></li>
+          <li><a href="https://www.facebook.com/share/1Dj8hc8AC5/" target="_blank" rel="noopener">facebook.com/MuraInk</a></li>
+          <li>София · обслужваме цяла България</li>
         </ul>
       </div>
 
-      <form class="contact-form" onsubmit="event.preventDefault(); this.querySelector('.form-ok').hidden=false;">
-        <label>
-          <span>Име</span>
-          <input type="text" name="name" required placeholder="Вашето име" />
+      <form class="contact-form" onsubmit="event.preventDefault(); this.querySelector('.ok').hidden=false;">
+        <label>Име
+          <input type="text" name="name" required placeholder="Иван Петров" />
         </label>
-        <label>
-          <span>Email или телефон</span>
-          <input type="text" name="contact" required placeholder="напр. ivan@example.com" />
+        <label>Email или телефон
+          <input type="text" name="contact" required placeholder="ivan@example.com" />
         </label>
-        <label>
-          <span>Размери на стената (Ш × В)</span>
-          <input type="text" name="size" placeholder="напр. 3.2 м × 2.5 м" />
+        <label>Размери (Ш × В)
+          <input type="text" name="size" placeholder="3.2 м × 2.5 м" />
         </label>
-        <label>
-          <span>Опишете идеята си</span>
-          <textarea name="message" rows="4" placeholder="Каква снимка или мотив искате? Има ли дедлайн?"></textarea>
+        <label>Идея
+          <textarea name="message" rows="4" placeholder="Каква снимка или мотив? Има ли срок?"></textarea>
         </label>
-        <button type="submit" class="btn btn-primary">Изпратете запитване</button>
-        <p class="form-ok" hidden>Благодарим! Ще се свържем с вас до 24 часа.</p>
+        <button type="submit" class="btn btn-ink">Изпратете</button>
+        <p class="ok" hidden>Благодарим. Ще се свържем с вас до 24 часа.</p>
       </form>
     </div>
   </section>
 
-  <!-- ================= FOOTER ================= -->
   <footer class="footer">
-    <div class="footer-row">
-      <div class="brand brand-footer">
-        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
-          <rect x="3" y="6" width="34" height="22" rx="3" fill="none" stroke="currentColor" stroke-width="2" />
-          <circle cx="20" cy="17" r="4" fill="currentColor" />
-          <line x1="10" y1="32" x2="30" y2="32" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-        </svg>
-        <span class="brand-text">Mura<span class="brand-ink">Ink</span></span>
-      </div>
-      <p class="muted">© <span id="year"></span> MuraInk · Стенен печат · България</p>
-      <nav class="footer-links" aria-label="Footer">
-        <a href="#services">Услуги</a>
-        <a href="#pricing">Цени</a>
-        <a href="#contact">Контакти</a>
-      </nav>
-    </div>
+    <img src="./assets/muraink-logo.jpg" alt="MuraInk" class="footer-logo" />
+    <p>© <span id="year"></span> MuraInk · Стенен печат · България</p>
+    <nav>
+      <a href="#what">Какво правим</a>
+      <a href="#pricing">Цени</a>
+      <a href="#contact">Контакти</a>
+    </nav>
   </footer>
 
   <script src="./script.js"></script>
